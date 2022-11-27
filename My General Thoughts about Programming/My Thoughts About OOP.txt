@@ -1,0 +1,37 @@
+1- If we Want to descripe OOP in one word what will it be?
+- Polimorphism
+------------------------------------------------------------
+1-What are the concepts of OOP?
+a- Class
+b- Object
+c- Polymorphism
+d- Abstraction
+e- Inheritance
+c- encapsulation
+--------------------------------------------------------------
+1- what are the most important concepts of OOP?
+
+- Polymorphism and abstraction
+everything else is a tool to only achieve them.
+--------------------------------------------------------------
+1- What are the types of polymorphism?
+Since polymorphism can be:-
+ a-"Completely Open" via making the parameter type is "Any" or "Object" in java and C#.
+ b-"constrained" via inheritance because we can't pass to the parameter (for example) a perimitve type or another type when we already specified the type of the parameter by some "Class" or "Interface".
+
+- So that's why Typescript Union types gives us "Controled but with no constrains Polymorphism"
+------------------------------------------------------------
+1- Why do we really need Inheritance?
+
+Short Answer:- only for "polymorphism with No Repeated Code".
+
+Long answer:- 
+- If someone said that we need it for DRY then we can tell him that you can pass an object of the parent class to the child class.
+- If someone said for encapsulation then we can tell him that javascript achieved encapsulation with files not classes.
+
+- so we need inheritance to achieve polymorphism but with no repeated code.
+-------------------------------------------------------------
+2- Do we really need class to achieve encapsulation?
+
+No, because javascript achieved it using only the files.
+-------------------------------------------------------------

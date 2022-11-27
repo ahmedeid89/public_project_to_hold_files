@@ -1,0 +1,32 @@
+1- MultiThreading has only two problems:-
+ a- Overlapped modification of the same variable
+ b- not in a sequential order
+
+---------------------------------------------------------
+2- How Javascript solved the two problems of mulithreading?
+ a- for the Overlapped modification problem then make every thread can't modify the variables in the main single thread, only they can create their copy of the variable. And also no thread can change the variables in the other threads, only can create it copy of the variable
+
+b- for the sequential order problem, They went form callbacks to promises then to promises with async-await.
+
+---------------------------------------------------------
+3- How the other languages solved the two problems of multithreading?
+
+they used the synchronizatin concept.
+---------------------------------------------------------
+4- does the syncronization concept have problems?
+
+Yes, it has the dead-lock problem.
+---------------------------------------------------------
+5- What are your solutions for the two problems of synchronization, Ahmed?
+
+a- for the Overlapped Modification Problem, I suggest to only change all and every variable via "set" and inside "set" we synchronize on the variable itself or any other object or class we choose. We must not change any varialbe under any circumstances without using "set".
+because with code pilling up and maintaining it over the years we well not know where we modified the variable.
+
+b- for the sequential problem I suggest getting a "Job" object for every thread if the language allow that and "await" on it.
+-----------------------------------------------------------
+6- Precaution no.1:-
+don't wrap the "synchronized()" word directly inside a new thread inside a method because when you call that method inside another synchronized thread you may forget that the method you called have a thread with synchronized inside it which will lead to unexpected behavior.
+The following is bad:-
+fun func_1(){
+  Thread{ synchronized(someObj){//some work}}.start()
+}

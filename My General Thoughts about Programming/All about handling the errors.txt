@@ -1,0 +1,26 @@
+
+All of this need to be revised
+-------------------------------------------------------
+//new thought 10-9-2022
+
+1-try-catch blocks must only be used on part of the function and only if you want to do some actions then continue.
+
+2-the responsiblity of handling the error of the whole function is on the caller of the function
+
+---types of the actions
+           1- hand over something and coninue.
+           2- hand over something and chrash the software.
+           3- coninue to retrying the same thing again.
+           4- continue trying something else.
+           5- jus skip the error and continue.
+----------------------------------------------------
+//old thoughts
+In all your code the normal thing is not to put a try-catch block, but you put it only for one of the following reasons:-
+
+A- when you want to :- 
+
+           1- hand over something and coninue.
+           2- hand over something and chrash the software.
+           3- coninue to retrying the same thing again.
+           4- continue trying something else.
+           5- jus skip the error and continue.

@@ -1,0 +1,32 @@
+
+1-Why did they invent Generics?
+
+Short Answer:- "To Achieve Generality at DeclartionTime and Restriction at InvocationTime"
+------
+Long Answer:-
+To solve the following problem:-
+
+- In programming we have two states:-
+  a- "CompileTime"  b- "RunTime"
+
+- In RunTime we have two states:-
+  a- "DeclarationTime"  b- "InvocationTime"
+
+- In statically typed languages at "DeclarationTime" (functions,methods and classes) we have to choose between two options:- 
+Either to make the types 
+a-fully open (like making the type "object" or "Any") or
+b-restricted types.
+
+- So Generics invented to give us the best of both worlds
+
+- The problem is that at "DeclarationTime", mostly, we want to make our (functions for example) to be valid for all types. But if we used open types (like "object or "Any") then we have to check for the all the different situations of types inside the function or our code will break.
+
+- In other wrods, how to make the function accept all types at "DeclartionTime" but only used a restriceted types at "InvocationTime"?.This is because we only can know what types we need to use at "InvocationTime"
+
+
+-------------------------------------------------
+
+-Javascript doesn't need generics because everything in it is general and open.
+
+-Generics are only needed in statically typed languages.
+--------------------------------------------------
